@@ -1,242 +1,224 @@
-[
-  {
-    "id": "1",
-    "review": "The product is amazing! Works perfectly and fast delivery.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "product quality and delivery"
-    }
+{
+  "statistics": {
+    "total_reviews": 26,
+    "sentiment_counts": {
+      "positive": 12,
+      "negative": 10,
+      "neutral": 4,
+      "error": 0
+    },
+    "positive_percentage": 46.15,
+    "negative_percentage": 38.46,
+    "neutral_percentage": 15.38
   },
-  {
-    "id": "2",
-    "review": "Not worth the money. Broke after 2 days.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "product durability"
+  "reviews": [
+    {
+      "id": "1",
+      "review": "The product is amazing! Works perfectly and fast delivery.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "product quality and delivery"
+      }
+    },
+    {
+      "id": "2",
+      "review": "Not worth the money. Broke after 2 days.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "durability"
+      }
+    },
+    {
+      "id": "3",
+      "review": "It's okay. Nothing special but does the job.",
+      "classification": {
+        "sentiment": "neutral",
+        "topic": "general functionality"
+      }
+    },
+    {
+      "id": "4",
+      "review": "Absolutely terrible customer service, they never responded to my emails.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "customer service"
+      }
+    },
+    {
+      "id": "5",
+      "review": "Best purchase I've made all year! Highly recommend to everyone.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "product recommendation"
+      }
+    },
+    {
+      "id": "6",
+      "review": "The packaging was damaged but the product itself works fine.",
+      "classification": {
+        "sentiment": "neutral",
+        "topic": "packaging damage"
+      }
+    },
+    {
+      "id": "7",
+      "review": "Good value for the price, would buy again.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "value for price"
+      }
+    },
+    {
+      "id": "8",
+      "review": "I'm disappointed, it doesn't match the description at all.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "description mismatch"
+      }
+    },
+    {
+      "id": "9",
+      "review": "Exceeded my expectations! The quality is outstanding and shipping was lightning fast.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "product quality and shipping speed"
+      }
+    },
+    {
+      "id": "10",
+      "review": "Complete waste of money. Stopped working within a week and no refund offered.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "product failure and refund issue"
+      }
+    },
+    {
+      "id": "11",
+      "review": "Decent enough for the price, but I've seen better quality elsewhere.",
+      "classification": {
+        "sentiment": "neutral",
+        "topic": "price-quality comparison"
+      }
+    },
+    {
+      "id": "12",
+      "review": "Worst experience ever. The item arrived dirty and clearly used before.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "item condition"
+      }
+    },
+    {
+      "id": "13",
+      "review": "Love love love this! Already ordered another one for my sister.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "product recommendation"
+      }
+    },
+    {
+      "id": "14",
+      "review": "Mediocre at best. The color is slightly off from the photos online.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "color accuracy"
+      }
+    },
+    {
+      "id": "15",
+      "review": "Fantastic customer support! They replaced my unit immediately, no questions asked.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "customer support"
+      }
+    },
+    {
+      "id": "16",
+      "review": "Very flimsy construction, feels like it could break any moment.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "construction quality"
+      }
+    },
+    {
+      "id": "17",
+      "review": "Does exactly what it says on the tin. No complaints here.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "product satisfaction"
+      }
+    },
+    {
+      "id": "18",
+      "review": "I wish I could give zero stars. Damaged goods and rude staff when I complained.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "damaged goods and rude staff"
+      }
+    },
+    {
+      "id": "19",
+      "review": "Surprisingly good for a budget option. Pleasantly surprised!",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "budget option"
+      }
+    },
+    {
+      "id": "20",
+      "review": "The instructions were impossible to follow, very frustrating setup process.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "setup difficulty"
+      }
+    },
+    {
+      "id": "21",
+      "review": "Five stars all around. The quality, design, and performance are top-notch.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "overall satisfaction"
+      }
+    },
+    {
+      "id": "22",
+      "review": "It's fine. Not great, not terrible. Just average.",
+      "classification": {
+        "sentiment": "neutral",
+        "topic": "average quality"
+      }
+    },
+    {
+      "id": "23",
+      "review": "Absolute game-changer! My productivity has doubled since I got this.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "productivity improvement"
+      }
+    },
+    {
+      "id": "24",
+      "review": "The battery life is nowhere near what they advertised. Very misleading.",
+      "classification": {
+        "sentiment": "negative",
+        "topic": "battery life"
+      }
+    },
+    {
+      "id": "25",
+      "review": "Great gift idea — the recipient was thrilled with it!",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "gift satisfaction"
+      }
+    },
+    {
+      "id": "26",
+      "review": "Pretty satisfied overall. Small details could be improved but no major issues.",
+      "classification": {
+        "sentiment": "positive",
+        "topic": "overall satisfaction with minor improvements"
+      }
     }
-  },
-  {
-    "id": "3",
-    "review": "It's okay. Nothing special but does the job.",
-    "classification": {
-      "sentiment": "neutral",
-      "topic": "general functionality"
-    }
-  },
-  {
-    "id": "4",
-    "review": "Absolutely terrible customer service, they never responded to my emails.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "customer service"
-    }
-  },
-  {
-    "id": "5",
-    "review": "Best purchase I've made all year! Highly recommend to everyone.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "product recommendation"
-    }
-  },
-  {
-    "id": "6",
-    "review": "The packaging was damaged but the product itself works fine.",
-    "classification": {
-      "sentiment": "neutral",
-      "topic": "packaging damage"
-    }
-  },
-  {
-    "id": "7",
-    "review": "Good value for the price, would buy again.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "value for price"
-    }
-  },
-  {
-    "id": "8",
-    "review": "I'm disappointed, it doesn't match the description at all.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "product description mismatch"
-    }
-  },
-  {
-    "id": "9",
-    "review": "Exceeded my expectations! The quality is outstanding and shipping was lightning fast.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "quality and shipping"
-    }
-  },
-  {
-    "id": "10",
-    "review": "Complete waste of money. Stopped working within a week and no refund offered.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "product failure and refund issue"
-    }
-  },
-  {
-    "id": "11",
-    "review": "Decent enough for the price, but I've seen better quality elsewhere.",
-    "classification": {
-      "sentiment": "neutral",
-      "topic": "price-quality comparison"
-    }
-  },
-  {
-    "id": "12",
-    "review": "Worst experience ever. The item arrived dirty and clearly used before.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "item condition"
-    }
-  },
-  {
-    "id": "13",
-    "review": "Love love love this! Already ordered another one for my sister.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "product recommendation"
-    }
-  },
-  {
-    "id": "14",
-    "review": "Mediocre at best. The color is slightly off from the photos online.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "color accuracy"
-    }
-  },
-  {
-    "id": "15",
-    "review": "Fantastic customer support! They replaced my unit immediately, no questions asked.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "customer support"
-    }
-  },
-  {
-    "id": "16",
-    "review": "Very flimsy construction, feels like it could break any moment.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "build quality"
-    }
-  },
-  {
-    "id": "17",
-    "review": "Does exactly what it says on the tin. No complaints here.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "product satisfaction"
-    }
-  },
-  {
-    "id": "18",
-    "review": "I wish I could give zero stars. Damaged goods and rude staff when I complained.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "damaged goods and rude staff"
-    }
-  },
-  {
-    "id": "19",
-    "review": "Surprisingly good for a budget option. Pleasantly surprised!",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "budget option"
-    }
-  },
-  {
-    "id": "20",
-    "review": "The instructions were impossible to follow, very frustrating setup process.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "setup process"
-    }
-  },
-  {
-    "id": "21",
-    "review": "Five stars all around. The quality, design, and performance are top-notch.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "overall satisfaction"
-    }
-  },
-  {
-    "id": "22",
-    "review": "It's fine. Not great, not terrible. Just average.",
-    "classification": {
-      "sentiment": "neutral",
-      "topic": "overall quality"
-    }
-  },
-  {
-    "id": "23",
-    "review": "Absolute game-changer! My productivity has doubled since I got this.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "productivity improvement"
-    }
-  },
-  {
-    "id": "24",
-    "review": "The battery life is nowhere near what they advertised. Very misleading.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "battery life"
-    }
-  },
-  {
-    "id": "25",
-    "review": "Great gift idea — the recipient was thrilled with it!",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "gift idea"
-    }
-  },
-  {
-    "id": "26",
-    "review": "Dented and scratched upon arrival, but return process was smooth.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "product condition and return"
-    }
-  },
-  {
-    "id": "27",
-    "review": "Solid build quality and feels premium in hand. Recommended.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "build quality"
-    }
-  },
-  {
-    "id": "28",
-    "review": "Don't bother buying this. You can find cheaper alternatives that work better.",
-    "classification": {
-      "sentiment": "negative",
-      "topic": "value for money"
-    }
-  },
-  {
-    "id": "29",
-    "review": "Pretty satisfied overall. Small details could be improved but no major issues.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "overall satisfaction with minor improvements"
-    }
-  },
-  {
-    "id": "30",
-    "review": "I've been using it daily for a month and it still looks brand new. Impressive durability.",
-    "classification": {
-      "sentiment": "positive",
-      "topic": "durability"
-    }
-  }
-]
+  ]
+}

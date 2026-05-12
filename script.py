@@ -71,6 +71,7 @@ def classify_review(review_text):
 def main():
     print("Reading input CSV...")
     
+
     try:
         df = pd.read_csv(INPUT_CSV)
         print(f"Loaded {len(df)} reviews")
@@ -82,6 +83,12 @@ def main():
         return
 
     results = []
+    sentiment_stats = {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0,
+        "error": 0
+    }
     
 
     for idx, row in df.iterrows():
@@ -89,13 +96,20 @@ def main():
         review_text = row.get('review_text', '')
         
         if not review_text or pd.isna(review_text):
-            print(f"Skipping empty review at row {idx}")
+            print(f" Skipping empty review at row {idx}")
             continue
             
         print(f"Processing review #{review_id}...")
         
         classification = classify_review(review_text)
         
+        sentiment = classification.get('sentiment', 'error')
+        if sentiment in sentiment_stats:
+            sentiment_stats[sentiment] += 1
+        else:
+            sentiment_stats['error'] += 1
+        
+
         result_entry = {
             "id": str(review_id),
             "review": review_text,
@@ -103,18 +117,35 @@ def main():
         }
         results.append(result_entry)
         
-        print(f"   Sentiment: {classification.get('sentiment')}, Topic: {classification.get('topic')}")
+        print(f"   Sentiment: {sentiment}, Topic: {classification.get('topic')}")
         
+        # Небольшая пауза, чтобы не превысить лимиты API
         time.sleep(0.5)
     
+    final_output = {
+        "statistics": {
+            "total_reviews": len(results),
+            "sentiment_counts": sentiment_stats,
+            "positive_percentage": round((sentiment_stats['positive'] / len(results) * 100), 2) if len(results) > 0 else 0,
+            "negative_percentage": round((sentiment_stats['negative'] / len(results) * 100), 2) if len(results) > 0 else 0,
+            "neutral_percentage": round((sentiment_stats['neutral'] / len(results) * 100), 2) if len(results) > 0 else 0
+        },
+        "reviews": results
+    }
+    
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
+        json.dump(final_output, f, ensure_ascii=False, indent=2)
     
     print(f"\nResults saved to {OUTPUT_JSON}")
     
-    sentiments = [r['classification'].get('sentiment') for r in results]
-    sentiment_counts = {s: sentiments.count(s) for s in set(sentiments)}
-    print(f"\nStatistics: {sentiment_counts}")
+    
+    print(f"\nFINAL STATISTICS:")
+    print(f"   Total reviews processed: {sentiment_stats['positive'] + sentiment_stats['negative'] + sentiment_stats['neutral']}")
+    print(f"   Positive: {sentiment_stats['positive']}")
+    print(f"   Negative: {sentiment_stats['negative']}")
+    print(f"   Neutral: {sentiment_stats['neutral']}")
+    if sentiment_stats['error'] > 0:
+        print(f"   Errors: {sentiment_stats['error']}")
 
 if __name__ == "__main__":
     main()

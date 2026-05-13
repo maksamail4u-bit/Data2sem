@@ -37,7 +37,7 @@ Data2sem/
 ├── script.py # Основной скрипт пайплайна
 ├── input_reviews.csv # Входные данные (отзывы)
 ├── output_result.json # Результаты работы (создается автоматически)
-└── .env.example # Конфигурация с API-ключом (нужно переименовать и вставить свой API key)
+└── env.example # Конфигурация с API-ключом (нужно переименовать и вставить свой API key)
 
 ```
 
@@ -58,9 +58,16 @@ pip install -r requirements.txt
 >  **Важно**: для регистрации и получения ключа потребуется VP*, далее в OpenRouter будет использоваться Deepseek V4 flash, поэтому при работе скрипта VP* не потребуется.
 
 1. **Зарегистрируйтесь** на платформе [OpenRouter.ai](https://openrouter.ai)
-2. **Перейдите** в раздел **Keys**: https://openrouter.ai/keys
-3. Нажмите Create Key и дайте название ключу.
+<img width="1895" height="564" alt="Снимок экрана 2026-05-13 171517" src="https://github.com/user-attachments/assets/1fbe58c2-3254-44ca-8702-0d4918ec0984" />
+
+2. **Перейдите** в раздел **Get API key**: https://openrouter.ai/keys
+3. Нажмите **New Key** и дайте название ключу.
+<img width="632" height="250" alt="Снимок экрана 2026-05-13 171544" src="https://github.com/user-attachments/assets/293b7b9b-0370-4304-9088-d688e7e76f3a" />
+ <img width="521" height="566" alt="Снимок экрана 2026-05-13 171600" src="https://github.com/user-attachments/assets/1ea63cf6-8512-42c7-9a83-ef0e63a01178" />
+
 4. Скопируйте **ключ** вида sk-or-v1-xxx...
+<img width="519" height="332" alt="Снимок экрана 2026-05-13 171626" src="https://github.com/user-attachments/assets/8286bfc4-ebad-4700-baa9-be15da67bdd5" />
+
 5. Вставьте ключ в файл env.example, затем переименуйте его в .env
 
 
@@ -137,6 +144,8 @@ id,review_text
 
 ### По умолчанию используется модель **deepseek/deepseek-v4-flash**. Вы можете изменить её в файле script.py:
 
+Deepseek доступен из России, при запуске скрипта не требуется включать никаких обходов блокировок
+
 ```
 
 MODEL = "openai/gpt-5.4-mini"
@@ -147,6 +156,8 @@ MODEL = "deepseek/deepseek-v4-flash"
 Работоспособность скрипта будет зависеть от API: количество токенов, регион, VP*.
 
 Список доступных моделей: https://openrouter.ai/models
+<img width="1050" height="171" alt="Снимок экрана 2026-05-13 180313" src="https://github.com/user-attachments/assets/de3f3e14-4278-4725-94a7-f5b31c14f3ac" />
+
 
 
 ## Обработка ошибок
@@ -167,7 +178,7 @@ MODEL = "deepseek/deepseek-v4-flash"
 
     • В консоль выводится сообщение об ошибке
 
-    • В результатах отображается **"sentiment": "error"** и **"topic": "api_failed"**
+    • В результатах отображается "sentiment": "error" и "topic": "api_failed"
 
 
 

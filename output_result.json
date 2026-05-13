@@ -17,7 +17,7 @@
       "review": "The product is amazing! Works perfectly and fast delivery.",
       "classification": {
         "sentiment": "positive",
-        "topic": "product quality and delivery"
+        "topic": "product performance and delivery"
       }
     },
     {
@@ -25,7 +25,7 @@
       "review": "Not worth the money. Broke after 2 days.",
       "classification": {
         "sentiment": "negative",
-        "topic": "durability"
+        "topic": "product durability"
       }
     },
     {
@@ -65,7 +65,7 @@
       "review": "Good value for the price, would buy again.",
       "classification": {
         "sentiment": "positive",
-        "topic": "value for price"
+        "topic": "value for money"
       }
     },
     {
@@ -81,7 +81,7 @@
       "review": "Exceeded my expectations! The quality is outstanding and shipping was lightning fast.",
       "classification": {
         "sentiment": "positive",
-        "topic": "product quality and shipping speed"
+        "topic": "quality and shipping"
       }
     },
     {
@@ -89,7 +89,7 @@
       "review": "Complete waste of money. Stopped working within a week and no refund offered.",
       "classification": {
         "sentiment": "negative",
-        "topic": "product failure and refund issue"
+        "topic": "product defect"
       }
     },
     {
@@ -97,7 +97,7 @@
       "review": "Decent enough for the price, but I've seen better quality elsewhere.",
       "classification": {
         "sentiment": "neutral",
-        "topic": "price-quality comparison"
+        "topic": "value for money"
       }
     },
     {
@@ -113,7 +113,7 @@
       "review": "Love love love this! Already ordered another one for my sister.",
       "classification": {
         "sentiment": "positive",
-        "topic": "product recommendation"
+        "topic": "product purchase"
       }
     },
     {
@@ -145,7 +145,7 @@
       "review": "Does exactly what it says on the tin. No complaints here.",
       "classification": {
         "sentiment": "positive",
-        "topic": "product satisfaction"
+        "topic": "product accuracy"
       }
     },
     {
@@ -169,7 +169,7 @@
       "review": "The instructions were impossible to follow, very frustrating setup process.",
       "classification": {
         "sentiment": "negative",
-        "topic": "setup difficulty"
+        "topic": "setup process"
       }
     },
     {
@@ -177,7 +177,7 @@
       "review": "Five stars all around. The quality, design, and performance are top-notch.",
       "classification": {
         "sentiment": "positive",
-        "topic": "overall satisfaction"
+        "topic": "overall product quality"
       }
     },
     {
@@ -185,7 +185,7 @@
       "review": "It's fine. Not great, not terrible. Just average.",
       "classification": {
         "sentiment": "neutral",
-        "topic": "average quality"
+        "topic": "overall quality"
       }
     },
     {
@@ -209,7 +209,7 @@
       "review": "Great gift idea — the recipient was thrilled with it!",
       "classification": {
         "sentiment": "positive",
-        "topic": "gift satisfaction"
+        "topic": "gift idea"
       }
     },
     {
@@ -217,7 +217,7 @@
       "review": "Pretty satisfied overall. Small details could be improved but no major issues.",
       "classification": {
         "sentiment": "positive",
-        "topic": "overall satisfaction with minor improvements"
+        "topic": "overall satisfaction"
       }
     }
   ]
